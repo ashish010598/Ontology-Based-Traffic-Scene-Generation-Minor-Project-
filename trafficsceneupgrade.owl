@@ -1,0 +1,1977 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#"
+     xml:base="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:trafficscene="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#approach_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#approach_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#behind_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#behind_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#follow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#follow">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_behind_position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_behind_position">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#behind_of"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#behind_of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#infront_of"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#infront_of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_left_neighbour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_left_neighbour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_left_position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_left_position">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#left_of"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#left_of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_neighbour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_neighbour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_position">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#right_of"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#right_of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#infront_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#infront_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    <rdf:Description>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#infront_of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_occupied_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_occupied_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lane_change_by_left_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lane_change_by_left_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lane_change_by_right_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lane_change_by_right_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#left_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#left_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#move_back_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#move_back_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#offers_position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#offers_position">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#right_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#right_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#safe_stop_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#safe_stop_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Hardshoulder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#turn_left_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#turn_left_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#turn_right_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#turn_right_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#cannot_change_lane -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#cannot_change_lane">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#change_speed_to -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#change_speed_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_color">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed_limit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed_limit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Speed_limit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_width -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_width">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_raining -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_raining">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Hardshoulder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Hardshoulder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#No_lane_change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#No_lane_change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Slippery_road_ahead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Slippery_road_ahead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Speed_limit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Speed_limit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1"/>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</has_height>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane1"/>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</has_height>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_1"/>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</has_height>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2"/>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</has_height>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Hardshoulder"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane2"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier2"/>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Hardshoulder"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_2"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_2"/>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier1"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane2"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position1"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position2"/>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane1"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position3"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position4"/>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_1"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_2"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_1"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_3"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_5"/>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Road_element"/>
+        <has_left_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_1"/>
+        <has_right_neighbour rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_2"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4"/>
+        <offers_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_6"/>
+        <has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</has_width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <behind_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position2"/>
+        <left_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position3"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <infront_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position1"/>
+        <left_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position4"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <behind_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position4"/>
+        <is_occupied_by rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle2"/>
+        <right_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position1"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <infront_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position3"/>
+        <is_occupied_by rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle1"/>
+        <right_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position2"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <infront_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_3"/>
+        <left_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_2"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <infront_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4"/>
+        <is_occupied_by rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_1"/>
+        <right_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_1"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <behind_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_1"/>
+        <infront_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_5"/>
+        <left_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <behind_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_2"/>
+        <infront_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_6"/>
+        <is_occupied_by rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_2"/>
+        <right_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_3"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <behind_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_3"/>
+        <is_occupied_by rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_3"/>
+        <left_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_6"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <behind_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4"/>
+        <right_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_5"/>
+        <right_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_2"/>
+        <is_empty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_empty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_Barrier2"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane2"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_slippery_road"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Scene"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Crash_barrier_2_2"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Lane_2_2"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_No_lane_change"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_1"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_2"/>
+        <consists_of rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_3"/>
+        <is_raining rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_raining>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_No_lane_change -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_No_lane_change">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#No_lane_change"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_slippery_road -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_slippery_road">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Slippery_road_ahead"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_speed_limit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board_speed_limit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Sign_board"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Speed_limit"/>
+        <has_speed_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</has_speed_limit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <located_on rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position4"/>
+        <safe_stop_to rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1"/>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cannot_change_lane>
+        <has_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</has_color>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <located_on rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position3"/>
+        <safe_stop_to rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder1"/>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cannot_change_lane>
+        <change_speed_to rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</change_speed_to>
+        <has_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</has_color>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <located_on rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_2"/>
+        <safe_stop_to rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2"/>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cannot_change_lane>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cannot_change_lane>
+        <change_speed_to rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</change_speed_to>
+        <has_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</has_color>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <has_right_position rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_6"/>
+        <located_on rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_4"/>
+        <safe_stop_to rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#HardShoulder2"/>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cannot_change_lane>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cannot_change_lane>
+        <has_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</has_color>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle_2_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+        <located_on rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Position_2_5"/>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cannot_change_lane>
+        <cannot_change_lane rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cannot_change_lane>
+        <change_speed_to rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</change_speed_to>
+        <has_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow</has_color>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#l">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sl">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#bp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fv">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safe Stop</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Hardshoulder"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#offers_position"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#l"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_neighbour"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#l"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#h"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#safe_stop_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Follow</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_occupied_by"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fv"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#follow"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fv"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach to</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#approach_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lane Change to Right</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#cannot_change_lane"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_position"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp"/>
+                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lane_change_by_right_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turn left</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_left_position"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#turn_left_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turn Right</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_right_position"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#turn_right_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#rp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No lane Change</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#No_lane_change"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#cannot_change_lane"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slippery Road</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Slippery_road_ahead"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#change_speed_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speed Limit</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Speed_limit"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed_limit"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sb"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sl"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sl"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#change_speed_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sl"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raining</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#consists_of"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_speed"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_raining"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#sc"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#change_speed_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Move Back</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_behind_position"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#bp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#bp"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#move_back_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#bp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lane Change to Left</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#Vehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_left_position"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#has_infront_position"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#cannot_change_lane"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#located_on"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#p"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#is_empty"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lp"/>
+                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#lane_change_by_left_to"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#v"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/muj/ontologies/2019/2/trafficscene#fp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
